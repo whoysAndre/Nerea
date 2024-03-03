@@ -1,9 +1,17 @@
+import { Navbar } from "../../ui"
 
 
 export const HomePage = () => {
   return (
     <>
-      ha
+      
+      <Navbar/>
+
+
+      <div>
+        
+
+      </div>
       
     </>
   )

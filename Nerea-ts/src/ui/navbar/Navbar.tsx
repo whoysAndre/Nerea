@@ -2,9 +2,12 @@
 
 export const Navbar = () => {
   return (
-    <div>
 
-      Navbar
-    </div>
+
+    <nav className="flex ">
+
+    </nav>
+
+
   )
 }

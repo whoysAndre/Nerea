@@ -12,7 +12,7 @@ export const Navbar = () => {
 
   return (
 
-    <nav className="flex px-4 py-3 sm:py-8 md:px-20 lg:px-40 justify-between items-center sticky border-b-2 mb-8">
+    <nav className="bg-gray-100 flex px-4 py-3 sm:py-8 md:px-20 lg:px-40 justify-between items-center sticky top-0 border-b-2 mb-8 z-50">
 
       <div className="flex gap-4 sm:gap-7 items-center text-[1.1rem]">
 

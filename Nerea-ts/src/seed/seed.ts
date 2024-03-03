@@ -5,7 +5,7 @@ export interface Products {
   precio: number;
   descripcion: string;
   categoria: Category;
-};
+}
 
 type Category = 'parafina' | 'soja' | 'custom' | 'glicerina';
 

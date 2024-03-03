@@ -1,4 +1,4 @@
-import { Banner, Opacity } from "../components"
+import { Banner, Opacity, Carrusel } from "../components"
 
 export const HomePage = () => {
   return (

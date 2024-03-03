@@ -10,6 +10,7 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 export const Carrusel = () => {
   return (
     <section className="ultimo">
+      <div className="tittle">Ultimos lanzamientos</div>
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -23,14 +24,14 @@ export const Carrusel = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation, Autoplay]}
-        className="mySwiper"
+        className="mySwiper swiper-last"
       >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
+          <SwiperSlide className="sw-s-last">Slide 1</SwiperSlide>
+          <SwiperSlide className="sw-s-last">Slide 2</SwiperSlide>
+          <SwiperSlide className="sw-s-last">Slide 3</SwiperSlide>
+          <SwiperSlide className="sw-s-last">Slide 4</SwiperSlide>
+          <SwiperSlide className="sw-s-last">Slide 5</SwiperSlide>
+          <SwiperSlide className="sw-s-last">Slide 6</SwiperSlide>
       </Swiper>
     </section>
   );

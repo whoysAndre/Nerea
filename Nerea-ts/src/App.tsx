@@ -7,6 +7,7 @@ function App() {
     <>
       <Routes>
         <Route path="/*" element = {<AppRoutes/>}/>
+        <h1>hola</h1>
       </Routes>
     </>
   )

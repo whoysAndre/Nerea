@@ -6,13 +6,14 @@ export const HomePage = () => {
     <>
       {/* Filtro */}
       <Opacity/>
-      {/* Banner */}
-      <Banner />
       
-
-
-      {/* Carrusel */}
-      <Carrusel />
+      <main className="px-2 md:px-20 lg:px-40">
+        {/* Banner */}
+        <Banner />
+        {/* Carrusel */}
+        <Carrusel />
+      </main>
+      
     </>
   )
 }

@@ -34,8 +34,8 @@ export const Carrusel = () => {
       >
         {
           products.map(product => (
-            <SwiperSlide className="sw-s-last">
-              <img src={product.imagen} alt="" key={product.slug} />
+            <SwiperSlide className="sw-s-last" key={product.slug}>
+              <img src={product.imagen} alt=""/>
             </SwiperSlide>
 
           ))

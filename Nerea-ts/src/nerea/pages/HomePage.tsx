@@ -1,16 +1,9 @@
-
-
+import { Carrusel } from "../components"
 
 export const HomePage = () => {
   return (
     <>
-    
-
-      <div>
-        
-
-      </div>
-      
+    <Carrusel/>
     </>
   )
 }

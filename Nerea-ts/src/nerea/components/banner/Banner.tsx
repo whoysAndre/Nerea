@@ -6,8 +6,13 @@ import "swiper/css/scrollbar";
 import "./Banner.css";
 
 import { Autoplay, Scrollbar } from "swiper/modules";
+import { initialData } from "../../../seed/seed";
 
 export const Banner = () => {
+
+  const products = initialData.products;
+
+
   return (
     <>
       <Swiper
@@ -21,10 +26,16 @@ export const Banner = () => {
         modules={[Scrollbar, Autoplay]}
         className="mySwiper swiper-banner"
       >
-        <SwiperSlide className="swi-sli-banner">Slide 1</SwiperSlide>
-        <SwiperSlide className="swi-sli-banner">Slide 2</SwiperSlide>
-        <SwiperSlide className="swi-sli-banner">Slide 3</SwiperSlide>
-        <SwiperSlide className="swi-sli-banner">Slide 4</SwiperSlide>
+        {
+
+          products.map(product => (
+            <SwiperSlide className="sw-s-last">
+              <img src={product.imagen} alt="" key={product.slug} />
+            </SwiperSlide>
+
+          ))
+        }
+
       </Swiper>
     </>
   );

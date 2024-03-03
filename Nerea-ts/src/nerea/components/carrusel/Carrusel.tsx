@@ -1,13 +1,19 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import "./Carrusel.css";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { initialData } from "../../../seed/seed";
+
 
 export const Carrusel = () => {
+
+  const products = initialData.products;
+
+
+
   return (
     <section className="ultimo">
       <div className="tittle">Ultimos lanzamientos</div>
@@ -26,12 +32,15 @@ export const Carrusel = () => {
         modules={[Pagination, Navigation, Autoplay]}
         className="mySwiper swiper-last"
       >
-          <SwiperSlide className="sw-s-last">Slide 1</SwiperSlide>
-          <SwiperSlide className="sw-s-last">Slide 2</SwiperSlide>
-          <SwiperSlide className="sw-s-last">Slide 3</SwiperSlide>
-          <SwiperSlide className="sw-s-last">Slide 4</SwiperSlide>
-          <SwiperSlide className="sw-s-last">Slide 5</SwiperSlide>
-          <SwiperSlide className="sw-s-last">Slide 6</SwiperSlide>
+        {
+          products.map(product => (
+            <SwiperSlide className="sw-s-last">
+              <img src={product.imagen} alt="" key={product.slug} />
+            </SwiperSlide>
+
+          ))
+        }
+
       </Swiper>
     </section>
   );

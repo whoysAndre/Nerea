@@ -9,6 +9,8 @@
 body {
   font-family: "Montserrat Alternates", sans-serif;
   height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
   background: #eee;
   font-size: 14px;
   color: #000;

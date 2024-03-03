@@ -1,7 +1,7 @@
 @media (max-width: 767px) {
     .swiper-banner {
-        width: 40vw;
-        height: 50vh;
+        width: 100%;
+        height: 15%;
     }
 
     .swi-sli-banner {
@@ -57,7 +57,7 @@
 @media (min-width:1024px) {
     .swiper-banner {
         width: 100%;
-        height: 10rem;
+        height: 20%;
     }
 
     .swi-sli-banner {

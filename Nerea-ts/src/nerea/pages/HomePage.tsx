@@ -1,4 +1,4 @@
-import { Banner, Carrusel } from "../components"
+import { Banner, Opacity } from "../components"
 
 export const HomePage = () => {
   return (
@@ -8,6 +8,9 @@ export const HomePage = () => {
       <div className="block fixed top-[78px] left-0 w-screen h-screen z-10 bg-black opacity-30  sm:hidden"/>
       {/* Banner */}
       <Banner />
+      <Opacity/>
+      
+
 
       {/* Carrusel */}
       <Carrusel />

@@ -1,11 +1,14 @@
 import { IoLogoWhatsapp, } from "react-icons/io"
-import { IoMenuOutline, } from "react-icons/io5"
+import {IoCloseOutline, IoMenuOutline, } from "react-icons/io5"
 import { Link } from "react-router-dom"
 
 //Image
 import myLogo from "../../assets/vela-nueva.png";
+import { useUIStore } from "../../store";
 
 export const Navbar = () => {
+
+  const {isSideMenuOpen,openSideMenu,closeSideMenu} = useUIStore(state=>state);
 
   return (
 
@@ -31,8 +34,17 @@ export const Navbar = () => {
       </div>
 
 
-      <button className="sm:hidden bg-[#2e8b57] p-2 rounded-lg">
-        <IoMenuOutline size={30} className="text-white font-bold" />
+      <button className="sm:hidden bg-[#2e8b57] p-2 rounded-lg ">
+        {
+          !isSideMenuOpen ? (
+            <IoMenuOutline size={30} className="text-white font-bold" onClick={openSideMenu}/>
+
+          ):(
+            <IoCloseOutline size={30} className="text-white font-bold" 
+              onClick={closeSideMenu}
+            />
+          )
+        }
       </button>
 
       

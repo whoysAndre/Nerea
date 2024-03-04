@@ -15,29 +15,13 @@
 }
 
 @media (min-width: 768px) and (max-width:1023px) {
-    .ultimo {
-        height: 90vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.8em;
 
-    }
-
-    .tittle {
-        width: 90%;
-        height: 4vh;
-        display: flex;
-        justify-content: center;
-        font-size: 1.5rem;
-    }
-
-    .swiper-last {
-        width: 40%;
+    .swiper-banner {
+        width: 100%;
         height: 50%;
     }
 
-    .sw-s-last {
+    .swi-s-banner {
         text-align: center;
         font-size: 18px;
         background: #fff;
@@ -46,8 +30,7 @@
         align-items: center;
     }
 
-    .sw-s-last img {
-        display: block;
+    .swi-s-banner img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -60,12 +43,14 @@
         height: 20%;
     }
 
-    .swi-sli-banner {
-        text-align: center;
-        font-size: 18px;
+    .swi-s-banner {
         background: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .swi-s-banner img {
+        object-fit: cover;
     }
 }

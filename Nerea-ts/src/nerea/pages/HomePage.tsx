@@ -3,7 +3,6 @@ import { Hero } from "../components/hero/Hero"
 
 export const HomePage = () => {
   return (
-    
     <>
       {/* Filtro */}
       <Opacity/>
@@ -15,7 +14,6 @@ export const HomePage = () => {
         {/* Carrusel */}
         <Carrusel />
       </main>
-      
     </>
-  )
-}
+  );
+};

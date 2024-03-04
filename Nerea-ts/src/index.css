@@ -22,3 +22,16 @@ body {
 h2{
   font-family: var(--font-title);
 }
+
+
+
+.link-style::after{
+  content: "";
+  background: #2e8b57;
+  width: 50%;
+  height: 5px;
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  
+}

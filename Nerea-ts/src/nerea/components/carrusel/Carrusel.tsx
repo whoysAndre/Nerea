@@ -7,12 +7,8 @@ import "swiper/css/navigation";
 import "./Carrusel.css";
 import { initialData } from "../../../seed/seed";
 
-
 export const Carrusel = () => {
-
   const products = initialData.products;
-
-
 
   return (
     <section className="ultimo">
@@ -32,15 +28,16 @@ export const Carrusel = () => {
         modules={[Pagination, Navigation, Autoplay]}
         className="mySwiper swiper-last"
       >
-        {
-          products.map(product => (
-            <SwiperSlide className="sw-s-last" key={product.slug}>
-              <img src={product.imagen} alt=""/>
-            </SwiperSlide>
-
-          ))
-        }
-
+        {products.map((product) => (
+          <SwiperSlide className="sw-s-last" key={product.slug}>
+            <div className="container-products">
+              <img src={product.imagen} alt="" />
+              <h3>{product.titulo}</h3>
+              <h4>{product.descripcion}</h4>
+              <h5>{product.precio}</h5>
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   );

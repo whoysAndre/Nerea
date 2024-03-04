@@ -11,14 +11,11 @@
     }
 
     .tittle {
-        width: 90%;
+        width: 100%;
         height: 20%;
         display: flex;
         justify-content: center;
-        align-items: center;
-        align-content: center;
         font-size: 1.5rem;
-        border: 2px solid black;
     }
 
     .swiper-last {
@@ -28,9 +25,7 @@
     }
 
     .sw-s-last {
-        border-radius: 30px;
-        text-align: center;
-        font-size: 18px;
+        border-radius: 50px;
         background: #fff;
         display: flex;
         justify-content: center;
@@ -39,10 +34,11 @@
 
     .container-products {
         display: flex;
-        width: 80%;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         padding: 3rem 0;
+        gap: 1rem;
     }
 
     .container-products img {
@@ -50,11 +46,35 @@
         width: 50%;
         border-radius: 50%;
     }
+
+    .container-letters {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .2rem;
+    }
+
+    .container-letters h3 {
+        font-weight: bolder;
+        font-size: 1.3rem;
+    }
+
+    .container-letters h4 {
+        font-size: 1rem;
+    }
+
+    .btn-last {
+        padding: 10px 30px;
+        border: 2px solid #242424;
+        border-radius: 30px;
+    }
 }
 
 @media (min-width: 768px) and (max-width:1023px) {
     .ultimo {
-        height: 90vh;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -64,31 +84,61 @@
 
     .tittle {
         width: 100%;
-        height: 4vh;
+        height: 20%;
         display: flex;
         justify-content: center;
         font-size: 1.5rem;
     }
 
     .swiper-last {
-        width: 40%;
-        height: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
     }
 
     .sw-s-last {
-        text-align: center;
-        font-size: 18px;
+        border-radius: 50px;
         background: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .sw-s-last img {
-        display: block;
+    .container-products {
+        display: flex;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 0;
+        gap: 1rem;
+    }
+
+    .container-products img {
+        height: 50%;
+        width: 50%;
+        border-radius: 50%;
+    }
+
+    .container-letters {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .2rem;
+    }
+
+    .container-letters h3 {
+        font-weight: bolder;
+        font-size: 1.3rem;
+    }
+
+    .container-letters h4 {
+        font-size: 1rem;
+    }
+
+    .btn-last {
+        padding: 10px 30px;
+        border: 2px solid #242424;
+        border-radius: 30px;
     }
 }
 

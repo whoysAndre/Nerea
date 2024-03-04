@@ -41,7 +41,7 @@ export const Carrusel = () => {
             slidesPerView: 1,
             spaceBetween: 30,
           },
-          768: {
+          650: {
             slidesPerView: 2,
             spaceBetween: 30,
           },
@@ -64,8 +64,8 @@ export const Carrusel = () => {
               <img src={product.imagen} alt="" />
               <div className="container-letters">
                 <h3>{product.titulo}</h3>
-                <h4>{product.descripcion}</h4>
-                <h4>{product.precio}</h4>
+                <h4>Aroma: {product.descripcion}</h4>
+                <h4>Precio: S/{product.precio}</h4>
               </div>
               <button className="btn-last" type="button">
                 Ver product

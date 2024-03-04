@@ -7,7 +7,7 @@ export const HomePage = () => {
       {/* Filtro */}
       <Opacity/>
       
-      <main className="px-2 md:px-20 ">
+      <main className="px-2 md:px-20">
         {/* Hero */}
         <Hero/>
 

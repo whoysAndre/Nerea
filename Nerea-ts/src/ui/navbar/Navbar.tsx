@@ -1,6 +1,6 @@
 import { IoLogoWhatsapp, } from "react-icons/io"
 import {IoCloseOutline, IoMenuOutline, } from "react-icons/io5"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 //Image
 import myLogo from "../../assets/vela-nueva.png";
@@ -9,10 +9,10 @@ import { useUIStore } from "../../store";
 export const Navbar = () => {
 
   const {isSideMenuOpen,openSideMenu,closeSideMenu} = useUIStore(state=>state);
-
+  const {pathname} = useLocation();
   return (
 
-    <nav className="bg-gray-100 flex px-4 py-3 sm:py-8 md:px-20 lg:px-40 justify-between items-center sticky top-0 border-b-2 z-50">
+    <nav className="bg-gray-100 flex px-4 py-3 sm:py-5 md:px-20 lg:px-40 justify-between items-center sticky top-0 border-b-2 z-50">
 
       <div className="flex gap-4 sm:gap-7 items-center text-[1.1rem]">
 
@@ -20,7 +20,12 @@ export const Navbar = () => {
           <img src={myLogo} alt="" className="w-10 sm:w-14 object-cover" />
         </Link>
 
-        <Link to="/products" className="hidden sm:block font-semibold uppercase tracking-widest ">Catalago</Link>
+        <Link 
+          to="/products" 
+          className={` ${ pathname === '/products' ? 'relative link-style' : ''} hidden sm:block font-semibold uppercase tracking-widest`}
+        >
+          Ver Catalago
+        </Link>
 
       </div>
 

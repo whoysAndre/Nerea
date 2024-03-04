@@ -12,6 +12,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import "./Carrusel.css";
 import { initialData } from "../../../seed/seed";
+import { Link } from "react-router-dom";
 
 export const Carrusel = () => {
   const products = initialData.products;
@@ -67,9 +68,9 @@ export const Carrusel = () => {
                 <h4>Aroma: {product.descripcion}</h4>
                 <h4>Precio: S/{product.precio}</h4>
               </div>
-              <button className="btn-last" type="button">
+              <Link to={`product/${product.slug}`} className="btn-last" type="button">
                 Ver product
-              </button>
+              </Link>
             </div>
           </SwiperSlide>
         ))}

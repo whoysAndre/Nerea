@@ -1,7 +1,8 @@
 @media (max-width: 767px) {
     .ultimo {
         margin-top: 1.5rem;
-        height: 60vh;
+        margin-bottom: 1.5rem;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -21,11 +22,13 @@
     }
 
     .swiper-last {
-        width: 100%;
+        width: 90%;
         height: 100%;
+        border-radius: 30px;
     }
 
     .sw-s-last {
+        border-radius: 30px;
         text-align: center;
         font-size: 18px;
         background: #fff;
@@ -34,6 +37,19 @@
         align-items: center;
     }
 
+    .container-products {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 0;
+    }
+
+    .container-products img {
+        height: 50%;
+        width: 50%;
+        border-radius: 50%;
+    }
 }
 
 @media (min-width: 768px) and (max-width:1023px) {
@@ -47,7 +63,7 @@
     }
 
     .tittle {
-        width: 90%;
+        width: 100%;
         height: 4vh;
         display: flex;
         justify-content: center;
@@ -79,8 +95,8 @@
 @media (min-width:1024px) {
 
     .ultimo {
-        margin-top: 7rem;
-        margin-bottom: 7rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -91,7 +107,7 @@
 
     .tittle {
         width: 90%;
-        height: 8vh;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -99,17 +115,16 @@
     }
 
     .swiper-last {
-        width: 40%;
-        height: 50%;
+        width: 100%;
+        height: 100%;
         border-radius: 40px;
     }
 
     .sw-s-last {
-        text-align: center;
-        font-size: 18px;
+        border-radius: 40px;
         background: #fff;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
     }
 
@@ -119,6 +134,7 @@
         flex-direction: column;
         align-items: center;
         padding: 3rem 0;
+        gap: 1rem;
     }
 
     .container-products img {
@@ -127,5 +143,25 @@
         border-radius: 50%;
     }
 
-    .container-products h3 {}
+    .container-letters {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .1rem;
+    }
+
+    .container-letters h3 {
+        font-weight: bolder;
+        font-size: 1.3rem;
+    }
+
+    .container-letters h4 {
+        font-size: 1rem;
+    }
+
+    .btn-last {
+        padding: 10px 30px;
+        border: 2px solid #242424;
+        border-radius: 30px;
+    }
 }

@@ -1,4 +1,5 @@
 import { Opacity } from "../components"
+import { Hero } from "../components/hero/Hero"
 
 export const AboutPage = () => {
   return (
@@ -7,6 +8,8 @@ export const AboutPage = () => {
       {/* Filtro */}
       <Opacity/>
 
+      {/* Hero */}
+      <Hero/>
     </div>
   )
 }

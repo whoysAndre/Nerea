@@ -15,7 +15,9 @@ import { initialData } from "../../../seed/seed";
 import { Link } from "react-router-dom";
 
 export const Carrusel = () => {
-  const products = initialData.products;
+  const products = initialData.products.filter(
+    (product) => product.promocion === true
+  );
 
   return (
     <section className="ultimo">
@@ -34,11 +36,11 @@ export const Carrusel = () => {
         slidesPerView={1}
         spaceBetween={30}
         autoplay={{
-          delay: 2500,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         breakpoints={{
-          640: {
+          250: {
             slidesPerView: 1,
             spaceBetween: 30,
           },
@@ -47,8 +49,12 @@ export const Carrusel = () => {
             spaceBetween: 30,
           },
           1024: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 30,
+          },
+          1920: {
+            slidesPerView: 3,
+            spaceBetween: 100,
           },
         }}
         loop={true}
@@ -68,8 +74,12 @@ export const Carrusel = () => {
                 <h4>Aroma: {product.descripcion}</h4>
                 <h4>Precio: S/{product.precio}</h4>
               </div>
-              <Link to={`product/${product.slug}`} className="btn-last" type="button">
-                Ver product
+              <Link
+                to={`product/${product.slug}`}
+                className="btn-last"
+                type="button"
+              >
+                Ver producto
               </Link>
             </div>
           </SwiperSlide>

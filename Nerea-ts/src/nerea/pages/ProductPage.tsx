@@ -14,9 +14,11 @@ export const ProductPage = () => {
       {/* Filtro */}
       <Opacity/>
 
-      <Product
-        product={product!}
-      />
+      <main className="px-2 md:px-20">
+        <Product
+          product={product!}
+        />
+      </main>
 
     </>
   )

@@ -5,6 +5,8 @@ export interface ProductInterface {
   precio: number;
   descripcion: string;
   categoria: Category;
+  pesoGr:number;
+  promocion:boolean;
 }
 
 export type Category = 'parafina' | 'soja' | 'custom' | 'glicerina';

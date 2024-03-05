@@ -1,4 +1,4 @@
-import { Banner, Opacity, Carrusel } from "../components";
+import { Banner, Opacity, Carrusel, Categorias } from "../components";
 
 export const HomePage = () => {
   return (
@@ -11,7 +11,9 @@ export const HomePage = () => {
       <main className="px-2 md:px-5">
         {/* Carrusel */}
         <Carrusel />
+        {/* Categorias */}
       </main>
+      <Categorias />
     </>
   );
 };

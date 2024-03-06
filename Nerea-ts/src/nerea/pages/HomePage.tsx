@@ -13,7 +13,9 @@ export const HomePage = () => {
         <Carrusel />
         {/* Categorias */}
       </main>
-      <Categorias />
+      <section className="section-categorys">
+        <Categorias />
+      </section>
     </>
   );
 };

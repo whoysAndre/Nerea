@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import { AboutPage, ContactPage, HomePage, ProductPage, ProductsPage } from "../pages"
-import { Navbar, RespNavbar } from "../../ui"
+import { Footer, Navbar, RespNavbar } from "../../ui"
 
 
 
@@ -23,6 +23,7 @@ export const NereaRoutes = () => {
 
         
       </Routes>
+      <Footer/>
 
     </>
   )

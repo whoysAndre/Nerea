@@ -1,5 +1,6 @@
 import { initialData } from "../../../seed/seed";
 import { getCateCards } from "./Categorialogica";
+// import { useState } from "react";
 
 export const Categorias = () => {
   const category = [

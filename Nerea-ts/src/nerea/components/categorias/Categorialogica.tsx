@@ -1,34 +1,41 @@
 import { initialData } from "../../../seed/seed";
-import './Categorias.css'
+import "./Categorias.css";
 import { Link } from "react-router-dom";
 
 export const getCateCards = (category: string[]) => {
-  return category.map((cate) => {
+  return category.map((cate, index) => {
     const firstProduct = initialData.products.find(
       (product) => product.categoria === cate
     );
 
+    const shouldReverse = index % 2 !== 0;
+
     return (
       <div className="category-container" key={cate}>
         {firstProduct && (
-          <>
+          <div
+            className={`category-content ${
+              shouldReverse ? "category-reverse" : ""
+            }`}
+          >
             <div className="link-photo">
-                <Link to={`/ProductsPage/`}
-                type="img" className="link-img">
-                    <img
-                      src={firstProduct.imagen}
-                      alt={firstProduct.titulo}
-                      key={firstProduct.slug}
-                    />
-                </Link>
+              <Link to={`product/${cate}`} className="link-img">
+                <img
+                  src={firstProduct.imagen}
+                  alt={firstProduct.titulo}
+                  key={firstProduct.slug}
+                />
+              </Link>
             </div>
+
             <div className="link-letters">
-                <Link to={`/ProductsPage/`}
-                type="span" className="link-tittle">
-                    <span>{cate}</span>
+              <span className="link-tittle">
+                <Link className="link-product" to={`product/${cate}`}>
+                  {cate}
                 </Link>
+              </span>
             </div>
-          </>
+          </div>
         )}
       </div>
     );

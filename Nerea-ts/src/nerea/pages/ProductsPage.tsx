@@ -1,11 +1,13 @@
-import { Opacity } from "../components"
+import { Catalogo, Opacity } from "../components";
 
 export const ProductsPage = () => {
   return (
     <>
       {/* Filtro */}
-      <Opacity/>
-    </>
-  )
-}
+      <Opacity />
 
+      {/* Catalogo */}
+      <Catalogo />
+    </>
+  );
+};

@@ -17,7 +17,7 @@ export const NereaRoutes = () => {
         
         <Route path="/" element = {<HomePage/>}/>
         <Route path="/products" element = {<ProductsPage/>}/>
-        <Route path="/product/:slug" element = {<ProductPage/>}/>
+        <Route path="products/product/:slug" element = {<ProductPage/>}/>
         <Route path="/about" element = {<AboutPage/>}/>
         <Route path="/contact" element = {<ContactPage/>}/>
 

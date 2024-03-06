@@ -9,6 +9,7 @@ export const getCateCards = (category: string[]) => {
     );
 
     const shouldReverse = index % 2 !== 0;
+    const sectionId = `section-${cate.replace(/\s/g, "-").toLowerCase()}`;
 
     return (
       <div className="category-container" key={cate}>
@@ -19,7 +20,7 @@ export const getCateCards = (category: string[]) => {
             }`}
           >
             <div className="link-photo">
-              <Link to={`product/${cate}`} className="link-img">
+              <Link to={`/products#${sectionId}`} className="link-img">
                 <img
                   src={firstProduct.imagen}
                   alt={firstProduct.titulo}
@@ -30,7 +31,7 @@ export const getCateCards = (category: string[]) => {
 
             <div className="link-letters">
               <span className="link-tittle">
-                <Link className="link-product" to={`product/${cate}`}>
+                <Link className="link-product" to={`/products#${sectionId}`}>
                   {cate}
                 </Link>
               </span>

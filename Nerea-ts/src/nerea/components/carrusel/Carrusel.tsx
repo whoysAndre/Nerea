@@ -75,7 +75,7 @@ export const Carrusel = () => {
                 <h4>Precio: S/{product.precio}</h4>
               </div>
               <Link
-                to={`product/${product.slug}`}
+                to={`/products/product/${product.slug}`}
                 className="btn-last"
                 type="button"
               >

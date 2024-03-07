@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .category-container {
         width: 100%;
         height: 100%;
@@ -34,7 +34,7 @@
     }
 }
 
-@media (min-width:768px) and (max-width: 1023px) {
+@media (min-width:769px) and (max-width: 1023px) {
     .category-container {
         width: 100%;
         height: 100%;

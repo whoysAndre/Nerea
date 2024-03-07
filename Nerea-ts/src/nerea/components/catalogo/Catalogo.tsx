@@ -1,5 +1,6 @@
 import { initialData } from "../../../seed/seed";
 import { CatalogoSection } from "./CatalogoSection";
+import "./Catalogo.css";
 
 export const Catalogo = () => {
   const categories = [
@@ -7,7 +8,7 @@ export const Catalogo = () => {
   ];
 
   return (
-    <div>
+    <div className="container-global-catalogo">
       {categories.map((category) => (
         <CatalogoSection
           key={category}

@@ -12,9 +12,11 @@ export const CatalogoSection = ({
   const cateCards = getCateCards(category, products);
   const sectionId = `section-${category.replace(/\s/g, "-").toLowerCase()}`;
   return (
-    <section id={sectionId}>
-      <span>{category}</span>
+    <section id={sectionId} className="section-product">
+      <span className="tittle-section">{category}</span>
+      <div className="contenedor-productos">
       {cateCards}
+      </div>
     </section>
   );
 };

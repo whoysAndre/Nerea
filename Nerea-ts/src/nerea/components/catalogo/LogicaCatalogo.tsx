@@ -7,7 +7,7 @@ export const getCateCards = (category: string, products: any[]) => {
 
   return productsInCategory.map((product) => {
     return (
-      <div className="catalogo-content">
+      <div key={product.slug} className="catalogo-content">
         <div className="product-u-letters">
           <span className="letter-descri">Aroma: {product.descripcion}</span>
           <span className="letter-tittle">{product.titulo}</span>

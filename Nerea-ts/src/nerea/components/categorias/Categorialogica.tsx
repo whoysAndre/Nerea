@@ -31,7 +31,10 @@ export const getCateCards = (category: string[]) => {
 
             <div className="link-letters">
               <span className="link-tittle">
-                <Link className="link-product" to={`/products#${sectionId}`}>
+                <Link
+                  className="link-product"
+                  to={`/products#${sectionId}`}
+                >
                   {cate}
                 </Link>
               </span>

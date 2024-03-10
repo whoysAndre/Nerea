@@ -12,10 +12,10 @@ export const HomePage = () => {
         {/* Carrusel */}
         <Carrusel />
         {/* Categorias */}
+        <section className="section-categorys">
+          <Categorias />
+        </section>
       </main>
-      <section className="section-categorys">
-        <Categorias />
-      </section>
     </>
   );
 };

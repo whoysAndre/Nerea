@@ -1,15 +1,14 @@
-import { Opacity } from "../components"
-import { Hero } from "../components/hero/Hero"
+import { Opacity } from "../components";
+import { Hero } from "../components/hero/Hero";
 
 export const AboutPage = () => {
   return (
-    <div>
-
+    <>
       {/* Filtro */}
-      <Opacity/>
+      <Opacity />
 
       {/* Hero */}
-      <Hero/>
-    </div>
-  )
-}
+      <Hero />
+    </>
+  );
+};

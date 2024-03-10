@@ -1,5 +1,6 @@
 import { initialData } from "../../../seed/seed";
 import { getCateCards } from "./Categorialogica";
+import { ScrollToTop } from "../scrollToTop";
 // import { useState } from "react";
 
 export const Categorias = () => {
@@ -9,5 +10,5 @@ export const Categorias = () => {
 
   const cateCards = getCateCards(category);
 
-  return <>{cateCards}</>;
+  return <ScrollToTop>{cateCards}</ScrollToTop>;
 };

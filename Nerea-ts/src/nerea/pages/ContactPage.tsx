@@ -1,4 +1,4 @@
-import { Opacity } from "../components"
+import { Contacto, Opacity } from "../components"
 
 export const ContactPage = () => {
   return (
@@ -6,7 +6,8 @@ export const ContactPage = () => {
 
       {/* Filtro */}
       <Opacity/>
-
+      {/* Contact */}
+      <Contacto/>
     </>
   )
 }

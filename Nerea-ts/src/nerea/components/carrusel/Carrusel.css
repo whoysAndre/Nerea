@@ -26,6 +26,7 @@
 
     .sw-s-last {
         border-radius: 50px;
+        height: 100%;
         background: #fff;
         display: flex;
         justify-content: center;
@@ -34,7 +35,7 @@
 
     .container-products {
         display: flex;
-        width: 100%;
+        width: 80%;
         flex-direction: column;
         align-items: center;
         padding: 3rem 0;
@@ -106,7 +107,6 @@
 
     .container-products {
         display: flex;
-        width: 100%;
         flex-direction: column;
         align-items: center;
         padding: 4rem 0;
@@ -143,28 +143,29 @@
     }
 }
 
-@media (min-width:1024px) {
+@media (min-width:1024px) and (max-width:1919px) {
 
     .ultimo {
-        margin-top: 3.5rem;
-        margin-bottom: 3.5rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2em;
+        gap: 2.5em;
 
     }
 
     .tittle {
+        height: 20%;
         width: 100%;
         display: flex;
         justify-content: center;
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .swiper-last {
-        width: 100%;
+        width: 90%;
         height: 100%;
         border-radius: 40px;
     }
@@ -179,7 +180,7 @@
     }
 
     .container-products {
-        width: 100%;
+        width: 90%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -204,15 +205,92 @@
 
     .container-letters h3 {
         font-weight: bolder;
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
 
     .container-letters h4 {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     .btn-last {
         padding: 10px 30px;
+        font-size: 1.2rem;
+        border: 2px solid #242424;
+        border-radius: 30px;
+    }
+}
+
+@media (min-width:1920px) {
+    .ultimo {
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5em;
+
+    }
+
+    .tittle {
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 3.5rem;
+    }
+
+    .swiper-last {
+        width: 90%;
+        height: 100%;
+        border-radius: 40px;
+    }
+
+    .sw-s-last {
+        border-radius: 50px;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-products {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 0;
+        gap: 2.5rem;
+    }
+
+    .container-products img {
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .container-letters {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .container-letters h3 {
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+
+    .container-letters h4 {
+        font-size: 1.4rem;
+    }
+
+    .btn-last {
+        padding: 10px 30px;
+        font-size: 1.2rem;
         border: 2px solid #242424;
         border-radius: 30px;
     }

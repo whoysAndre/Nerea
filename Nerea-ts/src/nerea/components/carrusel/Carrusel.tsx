@@ -50,7 +50,7 @@ export const Carrusel = () => {
           },
           1024: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 50,
           },
           1920: {
             slidesPerView: 3,

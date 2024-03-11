@@ -1,114 +1,10 @@
 @media (max-width: 767px) {
 
     .container-global {
-        margin: 2rem 0;
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 2rem;
-        flex: 1;
-        width: 100%;
-        height: 100%;
-    }
-
-    .img-cont {
-        width: 100%;
-        height: 100%;
-        display: flex;
         justify-content: center;
-        align-items: center;
-    }
-
-    .img-product {
-        width: 70%;
-        height: 70%;
-        object-fit: cover;
-    }
-
-    .container-seccion2 {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        width: 100%;
-        height: 100%;
-    }
-
-    .letters-cont {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: .7rem;
-    }
-
-    .letters-cont span {
-        font-weight: bolder;
-        font-size: 1.3rem;
-        text-align: center;
-    }
-
-    .letters-cont p {
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .container-btn {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        height: 100%;
-    }
-
-    .cantidad {
-        width: 40%;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .btnMinus {
-        border: 1px solid #242424;
-        width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .btnMinus:disabled {
-        background-color: #c5c5c5;
-    }
-
-    .span-cantidad {
-        width: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #212121;
-    }
-
-    .btnPlus {
-        border: 1px solid #242424;
-        width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .btn-comprar {
-        border: 2px solid #242424;
-        border-radius: 20px;
-        width: 40%;
-        text-align: center;
-        padding: 10px 6px;
-        font-size: 1.2rem;
-    }
-}
-
-@media (min-width: 768px) and (max-width:1023px) {
-    .container-global {
-        margin: 2rem 0;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
         gap: 2rem;
         flex: 1;
         width: 100%;
@@ -125,10 +21,8 @@
 
     .img-product {
         width: 60%;
-        height: 60%;
         object-fit: cover;
-        border-radius: 30px;
-        border: 20px inset #ddd;
+        border: 1em inset #212121;
     }
 
     .container-seccion2 {
@@ -148,24 +42,28 @@
 
     .letters-cont span {
         font-weight: bolder;
-        font-size: 1.3rem;
+        font-size: 1.3em;
         text-align: center;
     }
 
     .letters-cont p {
-        font-size: 1rem;
+        font-size: 1em;
         text-align: center;
     }
 
     .container-btn {
         display: flex;
         justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
         height: 100%;
+        gap: 2.5rem;
     }
 
     .cantidad {
         width: 40%;
+        height: 2rem;
         display: flex;
         align-content: center;
         justify-content: center;
@@ -179,16 +77,24 @@
         align-items: center;
     }
 
+    .btnMinus:active {
+        background-color: #c5c5c5;
+        border: none;
+    }
+
     .btnMinus:disabled {
         background-color: #c5c5c5;
+        border: none;
     }
 
     .span-cantidad {
         width: 40%;
         display: flex;
+        text-align: center;
         justify-content: center;
         align-items: center;
-        border: 1px solid #212121;
+        font-weight: 600;
+        font-size: 1.2rem;
     }
 
     .btnPlus {
@@ -199,24 +105,30 @@
         align-items: center;
     }
 
+    .btnPlus:active {
+        background-color: #c5c5c5;
+        border: none;
+    }
+
     .btn-comprar {
-        border: 2px solid #242424;
+        border: 1px solid #212121;
         border-radius: 20px;
-        width: 40%;
+        width: 50%;
+        height: 100%;
+        padding: .3em 0;
         text-align: center;
-        padding: 10px 6px;
         font-size: 1.2rem;
+        font-weight: 600;
     }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 768px) and (max-width:1023px) {
     .container-global {
-        align-content: center;
-        justify-content: center;
-        margin: 2rem 0;
         display: flex;
         align-items: center;
-        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.5rem;
         flex: 1;
         width: 100%;
         height: 100%;
@@ -231,8 +143,8 @@
     }
 
     .img-product {
-        width: 65%;
-        height: 65%;
+        width: 40%;
+        /* height: 60%; */
         object-fit: cover;
         border-radius: 30px;
         border: 20px inset #ddd;
@@ -241,7 +153,7 @@
     .container-seccion2 {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 3rem;
         width: 100%;
         height: 100%;
     }
@@ -255,28 +167,24 @@
 
     .letters-cont span {
         font-weight: bolder;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         text-align: center;
     }
 
     .letters-cont p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: center;
     }
 
     .container-btn {
         display: flex;
         justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
         width: 100%;
-        gap: 2rem;
-        height: 100%;
+        height: 3rem;
     }
 
     .cantidad {
-        width: 20%;
-        height: 2.5rem;
+        width: 30%;
         display: flex;
         align-content: center;
         justify-content: center;
@@ -290,16 +198,23 @@
         align-items: center;
     }
 
+    .btnMinus:active {
+        background-color: #c5c5c5;
+        border: none;
+    }
+
     .btnMinus:disabled {
         background-color: #c5c5c5;
+        border: none;
     }
 
     .span-cantidad {
         width: 40%;
         display: flex;
         justify-content: center;
+        font-weight: 800;
+        font-size: 1.5rem;
         align-items: center;
-        border: 1px solid #212121;
     }
 
     .btnPlus {
@@ -310,12 +225,282 @@
         align-items: center;
     }
 
+    .btnPlus:active {
+        background-color: #c5c5c5;
+        border: none;
+    }
+
     .btn-comprar {
-        border: 2px solid #242424;
+        border: 1px solid #242424;
         border-radius: 20px;
-        width: 20%;
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        align-items: center;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1919px) {
+    .container-global {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12rem;
+        flex: 1;
+    }
+
+    .img-cont {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-product {
+        width: 40%;
+        object-fit: cover;
+        border-radius: 30px;
+        border: 20px inset #ddd;
+    }
+
+    .container-seccion2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .letters-cont {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .7rem;
+    }
+
+    .letters-cont span {
+        font-weight: bolder;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .letters-cont p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .container-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 4rem;
+        height: 100%;
+    }
+
+    .cantidad {
+        width: 60%;
+        height: 4rem;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btnMinus {
+        border: 1px solid #242424;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnMinus:active {
+        background-color: #c5c5c5;
+        border: none;
+    }
+
+    .btnMinus:disabled {
+        background-color: #c5c5c5;
+        border: none;
+    }
+
+
+    .span-cantidad {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        font-weight: 800;
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnPlus {
+        border: 1px solid #242424;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnPlus:active {
+        background-color: #c5c5c5;
+        border: none;
+    }
+
+    .btn-comprar {
+        border: 1px solid #242424;
+        border-radius: 20px;
+        width: 60%;
+        height: 100%;
         text-align: center;
         padding: 10px 6px;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        font-weight: 800;
+    }
+}
+
+@media (min-width:1920px) {
+    .container-global {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12rem;
+        flex: 1;
+    }
+
+    .img-cont {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-product {
+        width: 70%;
+        object-fit: cover;
+        border-radius: 30px;
+        border: 20px inset #ddd;
+    }
+
+    .container-seccion2 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .letters-cont {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .7rem;
+    }
+
+    .letters-cont span {
+        font-weight: bolder;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .letters-cont p {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .container-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 4rem;
+        height: 100%;
+    }
+
+    .cantidad {
+        width: 40%;
+        height: 4rem;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btnMinus {
+        border: 1px solid #242424;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnMinus:active {
+        background-color: #c5c5c5;
+        border: none;
+    }
+
+    .btnMinus:disabled {
+        background-color: #c5c5c5;
+        border: none;
+    }
+
+
+    .span-cantidad {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        font-weight: 800;
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnPlus {
+        border: 1px solid #242424;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnPlus:active {
+        background-color: #c5c5c5;
+        border: none;
+    }
+
+    .btn-comprar {
+        border: 1px solid #242424;
+        border-radius: 20px;
+        width: 40%;
+        height: 100%;
+        text-align: center;
+        padding: 10px 6px;
+        font-size: 1.6rem;
+        font-weight: 800;
     }
 }

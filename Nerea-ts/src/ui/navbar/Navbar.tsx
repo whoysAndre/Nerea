@@ -6,7 +6,6 @@ import myLogo from "../../assets/vela-nueva.png";
 import { useUIStore } from "../../store";
 
 export const Navbar = () => {
-
   const { isSideMenuOpen, openSideMenu, closeSideMenu } = useUIStore(
     (state) => state
   );

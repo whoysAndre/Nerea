@@ -8,7 +8,7 @@ export const HomePage = () => {
 
       <Banner />
       {/* <Banner /> */}
-      <main className="px-2 md:px-5">
+      <main>
         {/* Carrusel */}
         <Carrusel />
         {/* Categorias */}
